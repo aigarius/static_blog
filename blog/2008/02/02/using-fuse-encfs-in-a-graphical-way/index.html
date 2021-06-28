@@ -1,0 +1,5 @@
+<html><body><p>If you want to use encfs module from FUSE to encrypt some of your files and do not want to go into the command line to mount and unmount that encrypted folder, here is what you do:</p>
+<p>Add a line such as this to your /etc/fstab:</p>
+<p><code><br>encfs#/home/aigarius/.crypt/ /home/aigarius/crypt fuse rw,user,noauto 0 0<br></code></p>
+<p>Where '/home/aigarius/.crypt' is the folder where you have created an encrypted folder (with "encfs /home/aigarius/.crypt /home/aigarius/crypt" command) and '/home/aigarius/crypt' being the place where you want to mount to see the decrypted files.</p>
+<p>After you boot into Gnome, you go to Places-&gt;Computer, right-click on 'crypt' drive icon and select "Mount". It will prompt you for the passwrd and mount the folder. Unmounting will disconnect it. Enjoy.</p></body></html>

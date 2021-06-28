@@ -1,0 +1,9 @@
+<html><body><p>From http://159.18.52.69/raw/983493</p>
+<p>Error:</p>
+<p></p><pre></pre>
+<p>Traceback (most recent call last):<br>  File "test.py", line 12, in module<br>    from xml.dom.ext.reader import HtmlLib<br>ImportError: No module named ext.reader<br> <br></p>
+<p>Fix/workaround:</p>
+<p></p><pre></pre>
+<p>+        sys.path.append('/usr/lib/python%s/site-packages/oldxml' % sys.version[:3])<br>        from xml.dom.ext.reader import HtmlLib</p>
+<p></p>
+<p>I had an old Python script doing some XML work and after upgrade to Ubuntu 8.04 I started getting the above error message and had to use the above fix because the Ubuntu packages of python-xml moved the xml.dom.ext.* to /usr/lib/python2.5/site-packages/oldxml for some reason. Have not looked at the latest Debian packages. Does anyone know why such back-compatibility breaking change was introduced? All I find on Google are the people getting bitten by this bug and no reasoning or even discussion behind the change.</p></body></html>

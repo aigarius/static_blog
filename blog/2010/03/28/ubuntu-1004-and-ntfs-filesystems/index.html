@@ -1,0 +1,4 @@
+<html><body><p>subj. don't mix - just upgraded a simple Ubuntu 9.10 to Ubuntu 10.04 and it failed to boot. After careful examination, it looks that something replaced the munt line of my NTFS partition in the /etc/fstab and claimed that it is a VFAT partition and 'mountall' that is run during boot gets very, very confused if presented with such dillema, so mach in fact that it hangs and stops the whole boot sequence.</p>
+<p>The workaround is to boot from a livecd/usb and comment out all NTFS and VFAT lines in /etc/fstab. If that still does not help - replace the large UUIDs with device names back.</p>
+<p>Still have not reported the bug as there look to be several - regression in NTFS support, the upgrader corrupting the fstab file and mountall incorrectly handling a case of an unmountable file system.</p>
+<p>P.S. Also my Firefox would not start - that was solved by removing the sessionstore* files in my profile.</p></body></html>

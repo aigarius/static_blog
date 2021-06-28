@@ -1,0 +1,7 @@
+<html><body><p><a href="http://www.debian.org/security/2008/dsa-1571">http://www.debian.org/security/2008/dsa-1571</a></p>
+<p>Īsumā - visas pēdējos divos gados uz Debian sistēmām (ieskaitot Ubuntu, Knoppix, ...) ģenerētās SSH atslēgas, SSH serveru sertifikāti, SSL sertifikāti, x509 sertifikāti, OpenVPN atslēgas un DNSSEC atslēgas ir uzskatāmas par nedrošām. Nekavējoties atjaunojiet libssl-dev, libssl0.9.8-dbg, openssl un libssl0.9.8 pakas uz jaunākajām versijām un uzģenerējat jaunas atslēgas.</p>
+<p>Sīkāk:<br></p><ul><br> <li><a href="http://wiki.debian.org/SSLkeys">http://wiki.debian.org/SSLkeys</a></li></ul>
+<p> </p><li><a href="http://www.debian.org/security/key-rollover/">http://www.debian.org/security/key-rollover/</a></li><br>
+<p>Serveru administrātoru darāmais:<br></p><ul><br> <li><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade</code></li></ul>
+<p> </p><li>Servera SSH atslēgas pārģenerācija:<br><code>sudo rm /etc/ssh/ssh_host*<br>sudo dpkg-reconfigure openssh-server</code></li><br> <li>Lietotāju atslēgu dzēšana:<code>sudo rm /home/*/.ssh/authorized_keys</code></li><br> <li>Informēt SSH lietotājus par nepieciešamību atjaunot viņu sistēmas un tikai tad uzģenerēt jaunu atslēgu un augšupielādēt to</li><br> <li>Dabūt jaunu SSL sertifikātu HTTPS darbībai</li><br> <li>Uzlikt jaunās 'open*-blacklist' pakas, kas neļaus pieslēgties izmantojot nedrošas atslēgas</li>
+<p></p></body></html>

@@ -1,0 +1,4 @@
+<html><body><p>This has robbed me of several days of my life, so I want to bring Google juice this this problem.</p>
+<p>IF you have a Pylons or TurboGears application or anything else that uses the fantastic EvalException WSGI middleware for web debugging of you web program and have the following symptom:</p>
+<p>* on a crash the traceback page shows up, but it has no css style and no images<br>* http://127.0.0.1:5000/_debug/media/plus.jpg returns a 404 (where 127.0.0.1:5000 is the path of your application) with "Nothing could be found to match '_debug'"</p>
+<p>The problem that you are facing in this case is the enviroment variable PYTHONOPTIMIZE or apache_wsgi option WSGIPythonOptimize. Unset them both or you debug environment will not work!</p></body></html>
