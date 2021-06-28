@@ -142,7 +142,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/archive.html", "Archives"),
         ("/categories/index.html", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        ("/feeds/rss/rss.xml", "RSS feed"),
     ),
 }
 
@@ -308,7 +308,7 @@ COMPILERS = {
         "markdown": ('.md', '.mdown', '.markdown', '.wp'),
         "html": ('.html', '.htm')
         }
-        
+
 
 # Enable reST directives that insert the contents of external files such
 # as "include" and "raw." This maps directly to the docutils file_insertion_enabled
@@ -593,31 +593,31 @@ FRONT_INDEX_HEADER = {
 # rel_path: a relative URL to the current page/post (default)
 # full_path: a URL with the full path from the root
 # absolute: a complete URL (that includes the SITE_URL)
-# URL_TYPE = 'rel_path'
+# URL_TYPE = 'full_path'
 
 # Extension for RSS feed files
-# RSS_EXTENSION = ".xml"
+RSS_EXTENSION = ".xml"
 
 # RSS filename base (without extension); used for indexes and galleries.
 # (translatable)
-# RSS_FILENAME_BASE = "rss"
+RSS_FILENAME_BASE = "rss"
 
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / RSS_FILENAME_BASE RSS_EXTENSION
 # (translatable)
-# RSS_PATH = ""
+RSS_PATH = "feeds/rss"
 
 # Final location for the blog main Atom feed is:
 # output / TRANSLATION[lang] / ATOM_PATH / ATOM_FILENAME_BASE ATOM_EXTENSION
 # (translatable)
-# ATOM_PATH = ""
+ATOM_PATH = "feeds/atom"
 
 # Atom filename base (without extension); used for indexes.
 # (translatable)
 ATOM_FILENAME_BASE = "feed"
 
 # Extension for Atom feed files
-# ATOM_EXTENSION = ".atom"
+ATOM_EXTENSION = ".atom"
 
 # Slug the Tag URL. Easier for users to type, special characters are
 # often removed or replaced as well.
@@ -634,7 +634,9 @@ ATOM_FILENAME_BASE = "feed"
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = []
+REDIRECTIONS = [
+    ("blog/category/debian-planet/feeds/atom/", "category/debian-planet.atom"),
+]
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:
@@ -1155,7 +1157,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 
 # By default, Nikola generates RSS files for the website and for tags, and
 # links to it.  Set this to False to disable everything RSS-related.
-# GENERATE_RSS = True
+GENERATE_RSS = True
 
 # By default, Nikola does not generates Atom files for indexes and links to
 # them. Generate Atom for tags by setting TAG_PAGES_ARE_INDEXES to True.
@@ -1164,7 +1166,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # FEED_TEASER option. FEED_LINKS_APPEND_QUERY is also respected. Atom feeds
 # are generated even for old indexes and have pagination link relations
 # between each other. Old Atom feeds with no changes are marked as archived.
-# GENERATE_ATOM = False
+GENERATE_ATOM = True
 
 # Only include teasers in Atom and RSS feeds. Disabling include the full
 # content. Defaults to True.
@@ -1227,7 +1229,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Bootstrap is served from BootstrapCDN (provided by MaxCDN)
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = True
 
 # Check for USE_CDN compatibility.
 # If you are using custom themes, have configured the CSS properly and are
