@@ -636,7 +636,7 @@ ATOM_EXTENSION = ".atom"
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
-    ("blog/category/debian-planet/feeds/atom/", "category/debian-planet.atom"),
+    ("blog/category/debian-planet/feeds/atom/", "/category/debian-planet.atom"),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
