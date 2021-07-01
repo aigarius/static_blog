@@ -638,6 +638,7 @@ ATOM_EXTENSION = ".atom"
 REDIRECTIONS = [
     ("blog/category/debian-planet/feeds/atom/", "/categories/debian-planet.atom"),
     ("blog/category/ubuntulv-planet/feed/", "/categories/ubuntulv-planet.xml"),
+    ("blog/", "/"),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
