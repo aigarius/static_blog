@@ -239,3 +239,5 @@ partially, shifting it over to incidental charging category.
 And when one does that, then travelling with an electric car becomes no more annoying than travelling with
 a gasoline car. Having more breaks in a trip is a good thing and makes the trips actually easier and less
 stressfull.
+
+Questions? You can use [this i4talk forum thread](https://www.i4talk.com/threads/personal-red-i4-m50-ownership-impressions.2229/) or [this Twitter thread](https://twitter.com/aigarius/status/1542771741180788736) to ask them to me.
