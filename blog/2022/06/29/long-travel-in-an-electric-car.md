@@ -16,7 +16,9 @@ An ellegant car with very deep and
 memorable color, insanely powerful (544 hp/795 Nm), sub-4 second 0-100 km/h, large
 84 kWh battery (80 kWh usable), charging up to 210 kW, top speed of 225 km/h
 and also very efficient (which came out best in this trip) with WLTP range of 510 km
-and [EVDB real range of 435 km](https://ev-database.org/car/1519/BMW-i4-M50).
+and [EVDB real range of 435 km](https://ev-database.org/car/1519/BMW-i4-M50). The car
+also has performance tyres (Hankook Ventus S1 evo3 245/45R18 100Y XL in front and 
+255/45R18 103Y XL in rear all at recommended 2.5 bar) that have reduced efficiency.
 
 So I wanted to document and describe how was it for me to travel ~2000 km (one way)
 with this, electric, car from south of Germany to north of Latvia. I have done
@@ -30,7 +32,7 @@ Normally when I travelled this trip with a gasoline/diesel car I would normally 
 for two days with an intermediate stop somewhere around Warsaw with about 12 hours
 of travel time in each day. This would normally include a couple bathroom stops in each
 day, at least one longer lunch stop and 3-4 refueling stops on top of that. Normally
-this would use about 6 liters of fuel per 100 km on average with total usage of about
+this would use at least 6 liters of fuel per 100 km on average with total usage of about
 270 liters for the whole trip (or about 540€ just in fuel costs, nowadays). My
 (personal) quirk is that both fuel and recharging of my (business) car *inside Germany*
 is actually paid by my [employer](https://www.bmw-carit.de/en.html), so it is useful
@@ -56,7 +58,10 @@ This lines up very well with recommended rest stops for biological reasons (bath
 or coffee, a bit of movement to get blood circulating) and very close to what I had to do 
 anyway with a gasoline car. With a gasoline car I had to refuel first, then park, then go to
 bathroom and so on. With an electric car I can do all of that *while* the car is charging and
-in the end the total time for a stop is very similar.
+in the end the total time for a stop is very similar. Also not that there was a crazy heat
+wave going on and temperature outside was at about 34C minimum the whole day and hitting
+40C at one point of the trip, so a lot of power was used for cooling. The car has a heat pump
+standard, but it still was working hard to keep us cool in the sun.
 
 The car was able to plan a charging route with all the charging stops required and had all 
 the good options (like multiple intermediate stops) that many other cars (hi Tesla) and
@@ -73,7 +78,8 @@ data from vehicle-specific cloud service, such as MyBMW service, saves it, track
 also re-transmits it to ABRP for live navigation planning. ABRP allows for options and settings
 that no car or app offers, for example, saying that you want to stop at a particular place for
 an hour or until battery is charged to 90%, or saying that you have specific charging cards and
-would only want to stop at chargers that support those. In comparison, route planning by Google 
+would only want to stop at chargers that support those. Both the car and the ABRP also support
+alternate routes even with multiple intermediate stops. In comparison, route planning by Google 
 Maps or Apple Maps or Waze or even Tesla does not really come close.
 
 After charging up in the last German fast charger, a more interesting part of the trip started. 
@@ -227,17 +233,20 @@ the car at a charger, then it can charge up. Works really well, does not take ex
 
 * fast charging - charging up at a HPC during optimal charging conditions - from relatively low level to no more
 than 70-80% while you are still doing all the normal things one would do in a quick stop in a long travel
-process: bio things, cleaning the windscreen, getting a coffee or a snack
+process: bio things, cleaning the windscreen, getting a coffee or a snack.
 
 * necessary charging - charging from a whatever charger is available just enough to be able to reach the next
-destination or the next fast charger
+destination or the next fast charger.
 
 The last category is the only one that is really annoying and should be avoided at all costs. Even by shifting
 your plans so that you find something else useful to do while necessary charging is happening and thus, at least
-partially, shifting it over to incidental charging category.
+partially, shifting it over to incidental charging category. Then you are no longer just waiting for the car, 
+you are doing something else and the car magically is charged up again.
 
 And when one does that, then travelling with an electric car becomes no more annoying than travelling with
 a gasoline car. Having more breaks in a trip is a good thing and makes the trips actually easier and less
-stressfull.
+stressfull - I was more relaxed during and after this trip than during previous trips. Having the car air
+conditioning always be on, even when stopped, was a godsend in the insane heat wave of 30C-38C that we were
+driving trough.
 
 Questions? You can use [this i4talk forum thread](https://www.i4talk.com/threads/personal-red-i4-m50-ownership-impressions.2229/) or [this Twitter thread](https://twitter.com/aigarius/status/1542771741180788736) to ask them to me.
