@@ -249,4 +249,7 @@ stressfull - I was more relaxed during and after this trip than during previous 
 conditioning always be on, even when stopped, was a godsend in the insane heat wave of 30C-38C that we were
 driving trough.
 
+Final stats: 4425 km driven in the trip. Average consumption: 18.7 kWh/100km. Time driving: 2 days and 3 hours. 
+Car regened 152 kWh. Charging stations recharged 863 kWh.
+
 Questions? You can use [this i4talk forum thread](https://www.i4talk.com/threads/personal-red-i4-m50-ownership-impressions.2229/) or [this Twitter thread](https://twitter.com/aigarius/status/1542771741180788736) to ask them to me.
