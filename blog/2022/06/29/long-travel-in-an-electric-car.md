@@ -209,6 +209,11 @@ it gets from the car and gathers that data over time. It has nice aspects, like 
 on a map, having ways to do business trip accounting and having good calendar view. Sadly it does not correctly
 capture the data for [charging sessions](https://photos.app.goo.gl/Mu184AmjX5fiFfP28) (the amounts are incorrect).
 
+Update: after talking to Tronity support, it looks like the bug was in the incorrect value for the usable 
+battery capacity for my car. They will look into getting th eright values there by default, but as a workaround
+one can edit their car in their system (after at least one charging session) and directly set the expected
+battery capacity (usable) in the car properties on the Tronity web portal settings.
+
 One other fun way to see data from your BMW is using the [BMW integration in Home Assistant](https://www.home-assistant.io/integrations/bmw_connected_drive/).
 This brings the car as a device in your own smart home. You can read all the variables from the car current status
 (and Home Asisstant makes [cute historical charts](https://photos.app.goo.gl/gh9BUrXBgU66fEUK7)) and you can even see
