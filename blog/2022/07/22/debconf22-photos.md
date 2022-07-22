@@ -25,5 +25,5 @@ And here it is!!!
 
 You can also see it in:
 
-* [on Google Photos](https://photos.app.goo.gl/NnDzRunmxcWjN7o46)
+* [on Google Photos](https://photos.app.goo.gl/pvi2T9KmcxzD2PGQ9)
 * [on git-lfs](https://salsa.debian.org/debconf-team/public/share/debconf22/-/blob/main/aigarius_photos/debconf23_group_photo.jpg)
