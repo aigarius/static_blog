@@ -21,7 +21,7 @@ The photos can be found in [this Google Photo shared album](https://photos.app.g
 But the main photographic delight, as always is the DebConf 22 Group Photo.
 And here it is!!!
 
-<img src="https://salsa.debian.org/debconf-team/public/share/debconf22/-/raw/main/aigarius_photos/debconf23_group_photo.jpg?inline=false" alt="DebConf 22 Group photo small" width="1064" height="898">
+<img src="https://salsa.debian.org/debconf-team/public/share/debconf22/-/raw/main/aigarius_photos/debconf23_group_photo_small.jpg?inline=false" alt="DebConf 22 Group photo small" width="1064" height="898">
 
 You can also see it in:
 
