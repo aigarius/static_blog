@@ -16,14 +16,14 @@ And it has been my pleasure to again be here and take lots of pictures of the
 event and of the surroundings.
 
 The photos can be found in [this Google Photo shared album](https://photos.app.goo.gl/TWc6rz1NCDQQAUuPA) and also on
-[this git-lfs share](https://salsa.debian.org/debconf-team/public/share/debconf22/-/tree/main/aigarius_photos).
+[this git-lfs share](https://salsa.debian.org/debconf-team/public/share/debconf22/-/tree/main/photos/aigarius_photos).
 
 But the main photographic delight, as always is the DebConf 22 Group Photo.
 And here it is!!!
 
-<img src="https://salsa.debian.org/debconf-team/public/share/debconf22/-/raw/main/aigarius_photos/debconf23_group_photo_small.jpg?inline=false" alt="DebConf 22 Group photo small" width="1064" height="898">
+<img src="https://salsa.debian.org/debconf-team/public/share/debconf22/-/raw/main/photos/aigarius_photos/debconf23_group_photo_small.jpg?inline=false" alt="DebConf 22 Group photo small" width="1064" height="898">
 
 You can also see it in:
 
 * [on Google Photos](https://photos.app.goo.gl/pvi2T9KmcxzD2PGQ9)
-* [on git-lfs](https://salsa.debian.org/debconf-team/public/share/debconf22/-/blob/main/aigarius_photos/debconf23_group_photo.jpg)
+* [on git-lfs](https://salsa.debian.org/debconf-team/public/share/debconf22/-/blob/main/photos/aigarius_photos/debconf23_group_photo.jpg)
