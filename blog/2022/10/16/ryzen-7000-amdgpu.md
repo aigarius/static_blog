@@ -27,7 +27,7 @@ That looks bad, right?
 Well, if you either ssh into the machine or reboot with `module_blacklist=amdgpu` in the kernel command line you will 
 find in `/var/log/kern.log.1` those messages and also the following messages that will clarify the situation a bit:
 
-```
+```{ use_pygments=false }
 Oct 16 13:31:25 home kernel: [    4.129352] amdgpu 0000:10:00.0: firmware: failed to load amdgpu/psp_13_0_5_toc.bin (-2)
 Oct 16 13:31:25 home kernel: [    4.129354] firmware_class: See https://wiki.debian.org/Firmware for information about missing firmware
 Oct 16 13:31:25 home kernel: [    4.129358] amdgpu 0000:10:00.0: firmware: failed to load amdgpu/psp_13_0_5_toc.bin (-2)
