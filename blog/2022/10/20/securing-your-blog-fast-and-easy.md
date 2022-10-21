@@ -47,4 +47,5 @@ command lines and no extra package managers installed on my system.
 10/10 would recommend!
 
 Edit: it looks like the certbot handled the "aigarius.com" domain perfectly, *but* missed the redirects 
-from "www.aigarius.com", so I'd have to fix those up manually
+from "www.aigarius.com", so I'd have to fix those up manually by just copying the directive that certbot
+added to nginx config file for "aigarius.com" and editing the domain name.
