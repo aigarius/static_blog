@@ -45,3 +45,6 @@ HTTP traffic to HTTPS and that was it. I was done. No extra steps, no config fil
 command lines and no extra package managers installed on my system.
 
 10/10 would recommend!
+
+Edit: it looks like the certbot handled the "aigarius.com" domain perfectly, *but* missed the redirects 
+from "www.aigarius.com", so I'd have to fix those up manually
