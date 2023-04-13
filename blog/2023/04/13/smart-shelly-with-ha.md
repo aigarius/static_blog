@@ -44,7 +44,7 @@ of each wire and push them into the Wago connectors to connect them together.
 
 The [completed test setup](shelly_test.jpg) is a bit janky, but it works and is electrically safe (at least 
 for testing purposes). The wiring is pretty clear from [Shelly documentation](https://kb.shelly.cloud/knowledge-base/shelly-plus-1) (which is also just printed on the 
-front of the device itself. The only point of clarification is that on the output side the Shelly is a *relay*
+front of the device itself). The only point of clarification is that on the output side the Shelly is a *relay*
 and not a power provider, which means that when connecting Shelly to the wires going towards your lights it is 
 *not* enough to just wire Shelly output one to lights live wire and Shelly output zero to lights neutral wire.
 Instead you need to connect you input neutral wire directly to your lights neutral (same as input ground) and
