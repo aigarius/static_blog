@@ -33,6 +33,8 @@ dumb wall switch. For design consistency sake it would be good if the wall switc
 connecting the connectors when the button is being pressed, like a doorbell button), but the setup should also
 work for normal toggle wall switches with minimal changes. Some settings on the Shelly and a custom 
 [Shelly script](https://shelly-api-docs.shelly.cloud/gen2/Scripts/Tutorial) will take care of offline functionality.
+Note: Gen1 Shelly devices do not have scripting capabilities, you need a Gen2 device to do this, like the linked
+Shelly Plus.
 
 So first I created a test setup to validate my design. I took an old extension cable with a damaged wire, cut 
 out the damaged part and split up the wiring to make my test setup. It was really convinient to use the right
