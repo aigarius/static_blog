@@ -31,8 +31,8 @@ dumb light installation, putting in smart light bulbs (any that Home Assistant c
 in a [Shelly](https://www.shelly.cloud/en-de/products/product-overview/shelly-plus-1) next to an existing
 dumb wall switch. For design consistency sake it would be good if the wall switch is of impulse type (so only
 connecting the connectors when the button is being pressed, like a doorbell button), but the setup should also
-work for normal toggle wall switches with minimal changes. Some settings on the Shelly and a custom Shelly 
-script will take care of offline functionality.
+work for normal toggle wall switches with minimal changes. Some settings on the Shelly and a custom 
+[Shelly script](https://shelly-api-docs.shelly.cloud/gen2/Scripts/Tutorial) will take care of offline functionality.
 
 So first I created a test setup to validate my design. I took an old extension cable with a damaged wire, cut 
 out the damaged part and split up the wiring to make my test setup. It was really convinient to use the right
