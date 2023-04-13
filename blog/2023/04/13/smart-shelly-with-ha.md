@@ -51,7 +51,8 @@ and not a power provider, which means that when connecting Shelly to the wires g
 *not* enough to just wire Shelly output one to lights live wire and Shelly output zero to lights neutral wire.
 Instead you need to connect you input neutral wire directly to your lights neutral (same as input ground) and
 then wire the input live wire *trough* the Shelly output contacts (so input live to Shelly output zero and Shelly
-output one to lights live wire).
+output one to lights live wire). Except if you but a Shelly Plus 1PM, which has to measure power consumption and
+thus *has to* pass the whole device current trough itself to properly measure it.
 
 When that is done, tested and plugged in you can use [Shelly app](https://www.shelly.cloud/en-de/shelly-smart-control)
 to connect to your new Shelly device and make it join your WiFi network (or you can just use a laptop or a phone 
