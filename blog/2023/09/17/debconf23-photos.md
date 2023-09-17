@@ -16,12 +16,12 @@ event and of the surroundings.
 
 Today I will share with you the main group photo:
 
-<img src="https://salsa.debian.org/aigarius/dc23/-/raw/aigarius-main-patch-54290/artwork/debconf23_group.jpg?inline=false" alt="DebConf 22 Group photo small" width="1064" height="497">
+<img src="https://salsa.debian.org/debconf-team/public/share/debconf23/-/raw/main/photos/aigarius/group/debconf23_group.jpg?inline=false" alt="DebConf 23 Group photo" width="1064" height="497">
 
 You can also see it in:
 
 * [on Google Photos](https://photos.app.goo.gl/H3jegjtk7ckRYxvP9)
-* [on git-lfs](https://salsa.debian.org/aigarius/dc23/-/blob/aigarius-main-patch-54290/artwork/debconf23_group.jpg)
+* [on git-lfs](https://salsa.debian.org/debconf-team/public/share/debconf23/-/blob/main/photos/aigarius/group/debconf23_group.jpg)
 
 In keeping with the more relaxed nature of Debconf in India, the rest of my photos from the event will
 be published in about two weeks from now. That will give me a bit more time to process them correctly
