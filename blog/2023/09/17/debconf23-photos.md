@@ -1,7 +1,7 @@
 <!--
 .. title: Debconf 23 photos
 .. slug: debconf23-photos
-.. date: 2023-09-17 13:00:00 UTC
+.. date: 2023-09-17 12:00:00 UTC
 .. tags: Debian-planet,Ubuntu.lv-planet,blog,travel,debian,photo
 .. category:
 .. link:
@@ -12,7 +12,8 @@
 [Debconf 23](https://debconf23.debconf.org/) is coming to a close in Kochi, Kerala, India this year.
 
 And it has been my pleasure to again be here and take lots of pictures of the
-event and of the surroundings.
+event and of the surroundings. In total I took 1852 photos and walked just over 50 km between the
+two venue buildings and all the rooms where action happened.
 
 Today I will share with you the main group photo:
 
