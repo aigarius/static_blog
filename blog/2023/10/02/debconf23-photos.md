@@ -22,6 +22,9 @@ a new camera (Canon R7) and I am quite happy with the results, even if I still n
 this new beast. Also the gradual improvements of panorama stiching software (Hugin) ment that this year
 I did not need to manually correct any face-melt events on any of the group photos. So that is cool!
 
+
+<img src="https://salsa.debian.org/debconf-team/public/share/debconf23/-/raw/main/photos/aigarius/IMG_3884_debian.jpg?inline=false" alt="DebConf 23 pool Group photo" width="1064" height="497">
+
 You can find all my photos on:
 
 * [Google Photos album](https://photos.app.goo.gl/UW6zPQLNctsmkFHM9)
