@@ -23,7 +23,7 @@ this new beast. Also the gradual improvements of panorama stiching software (Hug
 I did not need to manually correct any face-melt events on any of the group photos. So that is cool!
 
 
-<img src="https://salsa.debian.org/debconf-team/public/share/debconf23/-/raw/main/photos/aigarius/IMG_3884_debian.jpg?inline=false" alt="DebConf 23 pool Group photo" width="1064" height="497">
+<img src="https://salsa.debian.org/debconf-team/public/share/debconf23/-/raw/main/photos/aigarius/IMG_3884_debian.jpg?inline=false" alt="DebConf 23 pool Group photo" width="1064" height="709">
 
 You can find all my photos on:
 
