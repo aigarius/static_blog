@@ -129,3 +129,6 @@ API key and salary info and app params for the month to predict for, and predict
 months balances at the same time. I edited
 the script locally with Neovim and also ran it locally with a few mocks, uploading to Home Assistant
 via the SSH addon when the local executions looked good.
+
+So what's next? Well, need to somewhat automate the sync with the bank (if at all possible). And for sure
+take a regular database and config backup :D
