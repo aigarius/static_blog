@@ -18,7 +18,7 @@ plentiful. And the korean food has been excellent and very energetic.
 
 Today I will share with you the main group photo:
 
-<img src="https://salsa.debian.org/debconf-team/public/share/debconf24/-/raw/main/photos/aigarius/group/debconf24_group.jpg?inline=false" alt="DebConf 24 Group photo" width="1064" height="497">
+<img src="https://salsa.debian.org/debconf-team/public/share/debconf24/-/raw/main/photos/aigarius/group/debconf24_group.jpg?inline=false" alt="DebConf 24 Group photo" width="1064" height="734">
 
 You can also see it in:
 
