@@ -101,3 +101,6 @@ And it is not just one car. All BMW cars in the future will transition to Neue K
 What can I tell about the software there? Not much more than is [already published](https://www.bmwgroup.com/en/news/general/2025/newidrive.html). It is still a Linux-based operating system, but now you will notice that it is also based on Android, specifically on the AOSP software stack. It still remains a 100% in-house developed OS and software stack with full control over all integrations. As shown just last week at CES, there is a local LLM for an in-car voice assistant and an integration to off-car Alexa+ expansion to cover wider services, like rich location search and hands-free booking of a table at a restaurant, for example. Naturally, each part of these services needs to meet strict privacy requirements, and the user needs to be able to agree or disagree to use them. And all of that needs to be tested.
 
 I hope that I can talk a bit more about this in one of the future Debconfs again.
+
+Questions? Feedback? Just ask [here](https://bsky.app/profile/aigarius.com/post/3mcatiey3k22z)
+or [here](https://www.threads.com/@aigarius/post/DTbF_ocjl10).
