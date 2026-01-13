@@ -1,7 +1,7 @@
 <!--
 .. title: Sedan experience (BMW i5)
 .. slug: sedan-experience
-.. date: 2026-01-07 19:00:00 UTC
+.. date: 2026-01-13 10:00:00 UTC
 .. tags: Debian-planet,Ubuntu.lv-planet,blog,hardware,car,work
 .. category:
 .. link:
