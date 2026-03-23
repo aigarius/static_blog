@@ -9,8 +9,6 @@
 .. type: text
 -->
 
-# Value of outreach and diversity to Debian
-
 A question came up in private conversations, but the answer IMHO is useful
 generally, so this is a repost. The question was generally on the topic of
 divercity and outreach - if it does really help underpriviledged people to give
@@ -65,7 +63,7 @@ developers to the community.
 
 Outreach to diverse communities is in _our_, selfish interests. Naturally we
 still need to figure out how much effort is actually spent on that and evaluate
-efficiency of different approaches.
+efficiency of different approaches. But in principle it *is* what we want to do.
 
 (And also our knowledge might make their lives better, but that's a minor side
 effect. /s)
