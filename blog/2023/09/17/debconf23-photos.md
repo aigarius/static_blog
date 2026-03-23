@@ -9,11 +9,12 @@
 .. type: text
 -->
 
-[Debconf 23](https://debconf23.debconf.org/) is coming to a close in Kochi, Kerala, India this year.
+[Debconf 23](https://debconf23.debconf.org/) is coming to a close in Kochi,
+Kerala, India this year.
 
 And it has been my pleasure to again be here and take lots of pictures of the
-event and of the surroundings. In total I took 1852 photos and walked just over 50 km between the
-two venue buildings and all the rooms where action happened.
+event and of the surroundings. In total I took 1852 photos and walked just over
+50 km between the two venue buildings and all the rooms where action happened.
 
 Today I will share with you the main group photo:
 
@@ -21,10 +22,11 @@ Today I will share with you the main group photo:
 
 You can also see it in:
 
-* [on Google Photos](https://photos.app.goo.gl/H3jegjtk7ckRYxvP9)
-* [on git-lfs](https://salsa.debian.org/debconf-team/public/share/debconf23/-/blob/main/photos/aigarius/group/debconf23_group.jpg)
+- [on Google Photos](https://photos.app.goo.gl/H3jegjtk7ckRYxvP9)
+- [on git-lfs](https://salsa.debian.org/debconf-team/public/share/debconf23/-/blob/main/photos/aigarius/group/debconf23_group.jpg)
 
-In keeping with the more relaxed nature of Debconf in India, the rest of my photos from the event will
-be published in about two weeks from now. That will give me a bit more time to process them correctly
-and also give all of you a chance to see these pictures with fresh eyes and stir up new memories from
-the event.
+In keeping with the more relaxed nature of Debconf in India, the rest of my
+photos from the event will be published in about two weeks from now. That will
+give me a bit more time to process them correctly and also give all of you a
+chance to see these pictures with fresh eyes and stir up new memories from the
+event.

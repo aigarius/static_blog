@@ -63,7 +63,7 @@ developers to the community.
 
 Outreach to diverse communities is in _our_, selfish interests. Naturally we
 still need to figure out how much effort is actually spent on that and evaluate
-efficiency of different approaches. But in principle it *is* what we want to do.
+efficiency of different approaches. But in principle it _is_ what we want to do.
 
 (And also our knowledge might make their lives better, but that's a minor side
 effect. /s)

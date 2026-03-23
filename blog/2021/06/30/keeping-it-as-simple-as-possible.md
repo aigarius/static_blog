@@ -24,9 +24,10 @@ looked.
 
 It was as simple as picking Nikola, finding its import_feed plugin, changing the
 `BLOG_RSS_LIMIT` in my Django Mezzanine blog to a thousand (to export all posts
-via RSS/ATOM feed), fixing some [bugs](https://github.com/getnikola/plugins/issues/389)
-in the import_feed plugin, waiting a few minutes for the full feed to generate
-and to be imported, adjusting the config of the resulting site, posting that to
+via RSS/ATOM feed), fixing some
+[bugs](https://github.com/getnikola/plugins/issues/389) in the import_feed
+plugin, waiting a few minutes for the full feed to generate and to be imported,
+adjusting the config of the resulting site, posting that to
 [git](https://github.com/aigarius/static_blog) and writing a simple shell script
 to pull that repo periodically and call `nikola build` on it, as well as config
 to serve ther result via ngnix. Done.
