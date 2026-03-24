@@ -1,7 +1,7 @@
 <!--
 .. title: Value of outreach and diversity to Debian
 .. slug: value-of-outreach
-.. date: 2026-01-23 10:00:00 UTC
+.. date: 2026-03-23 10:00:00 UTC
 .. tags: Debian-planet,Ubuntu.lv-planet,blog,hardware,car,work
 .. category:
 .. link:
