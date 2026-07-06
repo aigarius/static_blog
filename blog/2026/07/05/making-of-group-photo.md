@@ -377,5 +377,5 @@ things that you think need to be done. It's up to you. You did it. This moment w
 very long time. And you helped.
 
 Questions? Feedback? Just ask
-[here](https://bsky.app/profile/aigarius.com) or
-[here](https://www.threads.com/@aigarius).
+[here](https://bsky.app/profile/aigarius.com/post/3mpytbrm5dc2w) or
+[here](https://www.threads.com/@aigarius/post/DadpZDbjqAx?xmt=AQG0WPOLDjK2ZkbDiiuXEOqQQWF5bum51R8V_uNtv9nliA).
