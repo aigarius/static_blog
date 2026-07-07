@@ -10,7 +10,7 @@
 -->
 Each year a large group of Debian Developers and friends come together in different parts of the world to
 celebrate and collaborate on the future of Debian in a Debian Conference aka Debconf. Traditionally, we all
-also come together during this conferences to create a shared memory about it in the form of a group photo.
+also come together during these conferences to create a shared memory about it in the form of a group photo.
 Since 2006 (which is now 20 years ago ...) I ended up taking most of these
 [group photos](https://wiki.debian.org/DebConf/GroupPhotoAll). However, this year *I will be unable to make
 it* to [Debconf26 in Santa Fe](https://debconf26.debconf.org/) and so it is a great time to document and
@@ -37,7 +37,7 @@ The main goal of a big event group photo is capture both the moment itself and e
 that moment.
 
 We want people, who were *not* there to see all the people involved and get an impression of what
-it was like being there. It needs to show the breath and depth of people that make up this group, this project.
+it was like being there. It needs to show the breadth and depth of people that make up this group, this project.
 
 And we want people who *were* there to be able to look back the next week, the next year
 or in ten years and remember - ah, yes, I was there, I was standing right there with this grin on my face next
@@ -56,10 +56,10 @@ wider if there are no better alternatives (as detailed in the scouting section),
 of the image will be distorted and not really usable (but we can fix that in processing step). Or you can go
 to unusual aspect ratios, like we did in [Debconf 10](https://wiki.debconf.org/wiki/DebConf10/GroupPhoto).
 
-In the absence of a 100MP+ camera, you will need to be stiching together multiple frames to achieve resolution
+In the absence of a 100MP+ camera, you will need to be stitching together multiple frames to achieve resolution
 high enough to have enough pixels-per-face to see emotions clearly. This means that the photos you will actually
-be taking will be tighter than the overal field of view mentioned above. Still, a higher resolution camera body
-is preferrable - nowadays 24MP-32MP cameras APS-C provide a good compromise between resolution and price, but
+be taking will be tighter than the overall field of view mentioned above. Still, a higher resolution camera body
+is preferable - nowadays 24MP-32MP cameras APS-C provide a good compromise between resolution and price, but
 45-67MP full-frame cameras also exist on the market. Assume that we will be shooting in a bright environment,
 so most likely with quite low ISO settings, that means that high-ISO noise characteristics of more expensive
 cameras will not really play a role here. You will also not need very fast burst modes, even manual speed of
@@ -70,8 +70,9 @@ You can do amazing work in all other steps of the process and have a great camer
 a lens that is not sharp, then the end result will be disappointing.
 
 You want the lens that is sharpest corner-to-corner when stepped down to about f/8-f/11, that you can get for
-your system. You also want that lens to be about 85mm full-size sensor or 50mm for 1.6 crop size. Luckily that kind of range is also a great range for optical design and sharpest lenses are typically available in exactly these kinds
-of sizes. You absolutely want to have a fixed focal lenght lens, not a zoom lens. Even profession grade zoom lenses
+your system. You also want that lens to be about 85mm full-size sensor or 50mm for 1.6 crop size. Luckily that kind of
+range is also a great range for optical design and sharpest lenses are typically available in exactly these kinds
+of sizes. You absolutely want to have a fixed focal length lens, not a zoom lens. Even profession grade zoom lenses
 often deliver worse image quality compared to fixed lenses that cost less 1/10th of their price (when shooting in
 the same focal length). Newer design lenses are better than older lenses - optical design, coatings and precision
 manufacturing have advanced a lot over the decades. Retro look is great for mood, but not as good for actual
@@ -88,10 +89,10 @@ to Sigma 56mm f/1.4 DC DN for the next time.
 
 ## Scouting
 
-Scouting a good location for the group photo is another big chunk of a successfull picture. The critical piece of
-the puzzle is lens-to-face distance. In order to keep everyones face in-focus and have enough resolution on the
-farthest faces (without making nearest faces trully massive) we want to do everything possible to reduce the
-variance in lens-to-face distance - to reduce the difference in distanct between closest and farthest face.
+Scouting a good location for the group photo is another big chunk of a successful picture. The critical piece of
+the puzzle is lens-to-face distance. In order to keep everyone's face in-focus and have enough resolution on the
+farthest faces (without making nearest faces truly massive) we want to do everything possible to reduce the
+variance in lens-to-face distance - to reduce the difference in distance between closest and farthest face.
 
 The most effective way to do that is to have the photographer climb higher. To see this in action on the
 [Debconf photos](https://wiki.debian.org/DebConf/GroupPhotoAll), compare Debconf6 (very high camera position,
@@ -105,7 +106,7 @@ So you are looking for the highest point you could get to (even if that requires
 ladder) with a field large enough to fit the whole group comfortably. How to check that? Normally I simply take a
 photo from the top of the whole area and note down from there where the extreme corners of the group could be
 and still be fully seen in the shot - not blocked by trees, buildings and shadows. Then I go down and measure
-that space. Rule of thumb being - people in one horzontal line can stand 1 normal lenght step from each other and
+that space. Rule of thumb being - people in one horizontal line can stand 1 normal length step from each other and
 two horizontal lines can be half a step from each other vertically. So I can just measure a rough rectangle in
 steps, multiply the sides, multiply that by two and I have the rough number of people that can fit there for the
 photo.
@@ -116,17 +117,17 @@ same illumination - if half of the group is in the sun and half in a shadow, the
 time later. The absolute ideal positioning for the group photo is to have everyone be in shadow, but still have
 enough bright skies and bright buildings in front of the people to give good illumination of the faces. Worst
 you can do is have the sun be behind the people (so all the faces are really dark) and second worst is have the sun
-be directly in front of the group, so that the faces are very well illuminated, but everones eyes are closed
+be directly in front of the group, so that the faces are very well illuminated, but everyone's eyes are closed
 because they are being blinded by the sun. And sometimes all you can do is pray for some light clouds to provide
 for even and dispersed light. Debconf23 was very lucky that way.
 
 Another consideration is to how people are going to get to that place. You need to consider accessibility needs
-of people (it is ok, if it takes more effort or time, but it needs to be organized and communciated well in
+of people (it is ok, if it takes more effort or time, but it needs to be organized and communicated well in
 advance). And you need to consider how the big masses of people will be getting there - how to tell people where
 *exactly* it is and how to get there from various locations where people might be hanging out during the event?
 
 Having an alternate location indoors might be necessary if the weather report for the next days is not sufficiently
-predicatable. We had to use that contingency in Debconf9, for example.
+predictable. We had to use that contingency in Debconf9, for example.
 
 ## Organization
 
@@ -143,7 +144,7 @@ leave early for various personal reasons. Also *you* don't want it to happen jus
 because then you'd have very little time and clarity to do the processing of the image on the same day.
 
 For timing, the best way, in my experience, is to schedule the photo directly after the end of talk sessions before
-a mean break - lunch or dinner. Typically in the Debconf schedule there are 2-3 daily breaks planned, say for
+a meal break - lunch or dinner. Typically in the Debconf schedule there are 2-3 daily breaks planned, say for
 Debconf25 there was lunch, afternoon break and dinner. Talks are planned to end ~10 minutes before those breaks
 (and meals) begin, so for example, afternoon break starts at 16:00 and all talks in the previous block end at
 15:50. In such a case just schedule the "Group photo" event from 15:50 to 16:05. This gives people the info to go
@@ -155,7 +156,7 @@ leave the venue.
 
 Announce the date, time and the exact location as wide as possible, don't be shy. Announce and discuss mailing
 lists, IRC, Signal, Telegram, make sure the front desk knows in case anyone asks in-person, ... Check that it
-is again included in the announcements email on the day preceeding the photo date.
+is again included in the announcements email on the day preceding the photo date.
 
 When the date has arrived, it is a good idea to check in early with people with special mobility needs to make
 sure they know where to go, how to get there and how much time they will need to be able to get there on time.
@@ -173,13 +174,13 @@ need to remember is how many runners you recruited and how many have reported in
 arrived or if we still have to wait for someone or some group.
 
 Then you will only have one last point of organization left - shaping the crowd into a group. People will not
-know what your vision for the group photo is, so you will have to give clear and **LOUD** instructions on were
+know what your vision for the group photo is, so you will have to give clear and **LOUD** instructions on where
 people should *not* be standing. Use clear, large gestures to support your words. You want to compact the group,
 have the people that just joined in the last moment and are standing to the side come deeper in and join the
 crowd. Have any holes in the middle of the crowd filled in. Forming a semi-circle instead of a blob helps with
-averaging face-to-lens distances. Make sure  people are not in unexpected shadows. Make sure carried objects, like
+averaging face-to-lens distances. Make sure people are not in unexpected shadows. Make sure carried objects, like
 umbrellas of flags do not cover the faces of other people. Take the time to look at everyone face to make sure there
-are no people hiding behind someones shoulder - typically they are not aware that their face is in fact not really
+are no people hiding behind someone's shoulder - typically they are not aware that their face is in fact not really
 visible. If there are such people, call them out and point directly at them and encourage them to step forward, if
 they wish to do so. You are the *only* one seeing the final picture now and only you can correct it before
 capturing the moment. So a few extra seconds here are worth taking, even if 300+ people are standing in scorching
@@ -188,20 +189,20 @@ heat and waiting on you.
 When you are happy with what you are seeing, make sure to tell people clearly that you are now about to take
 the pictures and *again* remind them not to move and *explicitly* not to turn their heads to the side until you
 are done (this is the source of most of the extra work in processing). Be very loud and clear and make sure
-you have everyones undivided attention *before* you start saying the important stuff.
+you have everyone's undivided attention *before* you start saying the important stuff.
 
 When done - say so. There will be other groups that will want to also have a photo taken after the main group
 is a bit more dispersed, so don't run away. Typically at least the T-shirt group will want a picture and also
 all the organizers.
 
-Final bit of organization during the group photo shooting itself is the sneaky self-insert. You amy choose not
+Final bit of organization during the group photo shooting itself is the sneaky self-insert. You may choose not
 to bother with it, or do it in the simplest way, like I did in Debconf6, but if you really want to blend in with
 the crowd, you need to have someone else take a photo of you in the exact same location at the same date and time
 from the same location. So you should already during shaping the crowd decide where you would fit in, it is easiest
 to blend in at the back of the crowd and to one or other side, so that it appears like you are just standing behind
 the shoulders of a couple peoples. Remember that spot - it is easiest if you stand in the exact same ground spot
 when your photo is taken. Just go down, recruit a volunteer to take your photo, make sure the settings are fixed
-to the same ones as for ther group photo shots and have them take a handful of shots of you - one of you centered in
+to the same ones as for the group photo shots and have them take a handful of shots of you - one of you centered in
 the camera frame and a couple more with you more towards the corners of the frame. This distortion from being
 off-center in the frame may be important later.
 
@@ -223,11 +224,11 @@ of the sequence and be stuck with your camera still in "Busy" state writing big 
 and not allowing you to finish the full picture rapidly.
 
 You want to have the shutter speed at at least 1/100th of a second to prevent blur from both your hand movements
-and also from people in the shot moving arround a bit (image stabilisation will not help you there). And you want
-to have the apperture to be around f/8 - lower appertures risk people in front or behind falling out of focus, make
-the lenses look less sharp. Higher appertures also start to become less sharp due to diffraction effects above f/8.
+and also from people in the shot moving around a bit (image stabilisation will not help you there). And you want
+to have the aperture to be around f/8 - lower apertures risk people in front or behind falling out of focus, make
+the lenses look less sharp. Higher apertures also start to become less sharp due to diffraction effects above f/8.
 ISO should stay as low as possible, ideally at ISO 100, but if there is not enough light then upping the ISO to 400
-would be the first step that I would try to do and second would be decreasing the apperture to f/5.6. If there is
+would be the first step that I would try to do and second would be decreasing the aperture to f/5.6. If there is
 too much light, then increasing the shutter speed should be the safe thing to do.
 
 As people start to arrive into the shooting location - check the exposure and nail down the settings, ideally in
@@ -235,7 +236,7 @@ manual mode. Consider that left side could be a bit lighter or darker than right
 the picture a bit too dark as there is more depth to darkness before cut-off compared to clipping on the high
 end. However, do not trust the exposure detection, instead take a picture and look specifically at skin tones in
 faces of people that already are standing in the photo area. Faces are the key bit and the exposure needs to be
-adjusted just to the and ignore darker of lighter clothing. Do some test shots and find settings where faces
+adjusted just to the faces and ignore darker of lighter clothing. Do some test shots and find settings where faces
 look not too bright, but also not very dark and fix those settings in manual mode.
 
 Now you are ready for the action. Shape the crowd, check the faces and the action can start!
@@ -247,7 +248,7 @@ make it right. If you hurry too much under pressure, you risk being left with un
 whole effort wasted. Having already prepared and verified the manual settings makes it easier.
 
 When you are taking pictures, you have to remain as still as possible - even at very high
-shutter speeds even slow hand movements are still bad fro image quality. So think of the movement as of
+shutter speeds even slow hand movements are still bad for image quality. So think of the movement as of
 biathlon athlete shooting the very middle of five, very separate targets - take a burst, reframe, then steady
 up for a second and only then take the next burst. 3 frames per burst are sufficient. 90% of the time the very
 first photo of a burst will be best. As you move from frame to frame, aim for just a bit more than half-frame
@@ -256,8 +257,8 @@ face in case of problems. Proceed systematically, I typically start off on the t
 go right until the end of the line, then shift down half a frame and go left until the end and repeat until
 I am done with the crowd. 
 
-After that it is *very* helpfull to also immediatelly take photos of a "frame" around
-the whole crowd. Stitching process often distors the frames in weird ways that leave holes in the resulting image
+After that it is *very* helpful to also immediately take photos of a "frame" around
+the whole crowd. Stitching process often distorts the frames in weird ways that leave holes in the resulting image
 that you can fill if you have a wide frame around the crowd. It is possible to compensate with creative
 cutouts in the final image (like Debconf9), but the more framing room you make, the more flexible you will be
 able to be with cropping of the final photo. The frame also gives you the opportunity to capture more of the
@@ -269,10 +270,10 @@ in some years it was more than a hundred.
 
 ## Processing
 
-This part might be less stressful than taking the pictures from intensity perspecive, but it lasts longer. Depending
+This part might be less stressful than taking the pictures from intensity perspective, but it lasts longer. Depending
 on you luck, skill and perfectionism it can take anywhere from 3 to 9 hours of work to complete.
 
-Before you start, howerver, you should first request things that you will need for other people. This *can* even be
+Before you start, however, you should first request things that you will need for other people. This *can* even be
 done before taking the actual group photo, but usually I forget. To finish the photo you will need three things:
 
 * good quality vector graphics of the current Debconf logo
@@ -286,7 +287,7 @@ reflecting on what was the mood, the feeling, the mojo of this conference and of
 around a recognisable phrase or expression, make it a bit more insider-relevant and you are on the right path.
 Some years this was the hardest part.
 
-For the panorama stiching I will describe the workflow that has served me good for years, but maybe there are
+For the panorama stitching I will describe the workflow that has served me good for years, but maybe there are
 better ways possible nowadays. Feel free to let me know!
 
 First I would save all photos taken and select one sharpest photo from every burst. Next I would select the minimal
@@ -298,10 +299,10 @@ Open [Hugin](https://packages.debian.org/search?keywords=hugin) (you will also n
 and import your minimal set of images into it. Click the "Align" button and wait a while - the processor will be
 trying to figure out keypoints in each image and then try to match these points between the images to try to
 fit them all together into a single projection. To do that it will distort the images. This is the trial and error
-process part. You may need to add, remove or replace images to get the stiching to work or to work better. You
+process part. You may need to add, remove or replace images to get the stitching to work or to work better. You
 may want to add more of the frame images to fill the ragged holes around the image.
 
-After initial allignment, go to "Move/Drag" tab and move the image a bit up in the projected field of view and
+After initial alignment, go to "Move/Drag" tab and move the image a bit up in the projected field of view and
 make it a bit more central visually. That will help a bit with the distortions in the near-by people and people
 in the corners of the image. In the "Crop" tab set the initial crop - leave it generous, you can always crop more
 in later steps. Do not be afraid of leaving in sizable chunks of black homes, empty skies or grass. All of that
@@ -314,8 +315,8 @@ perspective correction and exposure blending steps. These are critical for fixin
 
 You might need to go back a forth a few times with a different sets of source images, maybe adding some image
 between other two, maybe removing another to reach a better starting point. The key part to pay attention - how
-many ugly stiches are there in the image. Check every face, the blending algorithms do not recognise faces and
-sometimes try to stich one face from two or more images creatying very weird effects. The *can* be fixed in the
+many ugly stitches are there in the image. Check every face, the blending algorithms do not recognise faces and
+sometimes try to stitch one face from two or more images creating very weird effects. They *can* be fixed in the
 next step, but it is rather hard manual work, so the fewer such faces are in the blended image, the less work
 you will have. In some years I've managed to find a combination where all faces were good and in other years
 I had to manually fix 13-15 faces.
@@ -326,11 +327,12 @@ will get very confused with the parts of the grass that it is able to see where 
 The next is the final processing in [GIMP](https://packages.debian.org/search?keywords=gimp). Think of it like
 a large and complex project - do as much as possible in separate layers, save often.
 
-Fixing wrongly stiched faces and also putting yourself into the photo are very similar activities in the end.
+Fixing wrongly stitched faces and also putting yourself into the photo are very similar activities in the end.
 Just the scale and the source differ. For yourself you just cut out yourself (upper torso is enough) from the
 separate photo. For corrupted face, choose one of two intermediate images that the Hugin created where the
-face is transformed, but not yet merged (with a different version of itseld). In either case crop the photo to
-roughly the interesting size and put roughly in the right spot as a separate layer on top of the group photo background. Reduce the opacity of the small layer to 30-40% and zoom in to 400%. With that it is much simpler to
+face is transformed, but not yet merged (with a different version of itself). In either case crop the photo to
+roughly the interesting size and put roughly in the right spot as a separate layer on top of the group photo
+background. Reduce the opacity of the small layer to 30-40% and zoom in to 400%. With that it is much simpler to
 position the layer with pixel precision. Then all you need to do is add a layer mask to this layer and paint it
 just right. Basically in layer mask black means transparent and white means non-transparent. So you need to *just*
 make everything that is you have white mask and everything that is not you have black mask. And smudge the border
@@ -340,7 +342,7 @@ of the actual work hours in post-processing.
 You *might* miss someone. I am sure Phill is just thrilled to see me in the very middle of the Debconf25 final
 picture .... But do try to fix them all.
 
-Use large, sweeping geometric figures to cover up black holes, empty graas fields and other sub-optimal corner
+Use large, sweeping geometric figures to cover up black holes, empty grass fields and other sub-optimal corner
 features. And then use that newly created free space to put in a large version of the logo of this years
 conference, decently sized motto and slightly smaller invitation to the next years conference.
 
@@ -348,7 +350,7 @@ Do not forget to add a copyright and license statement somewhere in the corner i
 readable font. I am using a text like: "Photo by: Full Name, Email: fullemail@debian.org, License: GPLv2+ or
 CCv3-BY" This ensures that this image may be used in any press coverage (with basic attribution) and also
 can be included in any GPL-licensed software, if that ever comes up. The same statement is also in the
-metadate of the image file (see Image-Metadate-Edit metadate in GIMP) along with information that states
+metadata of the image file (see Image-Metadata-Edit metadata in GIMP) along with information that states
 that this is "Debian Developer Conference Group photo, City, Country, Year". 
 Image->Image properties->Comment is another place where GIMP hides this EXIF information.
 
