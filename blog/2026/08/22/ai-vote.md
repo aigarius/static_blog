@@ -21,7 +21,7 @@ Spellcheck was used though.
 So, first I will describe how I see each of the 8 proposals, then what my vote will be, and then a bit more
 detail on the reasoning and thinking behind this. WARNING - this went *long*.
 
-* Proposal A - Action: ban all AI-assisted contributions via Social Contract amendment, except from upstreams
+* Proposal A(1) - Action: ban all AI-assisted contributions via Social Contract amendment, except from upstreams
  (so not rolling back the Linux kernel and other software to "pure", pre-AI state). Claims that copyright/licensing
  status is unclear, quality is bad, community is being destroyed, web resources see extra load and that training
  consumes "staggering" resources. Needs 2/3rd majority to pass. - IMHO worst and most inconsistent. If copyright
@@ -34,7 +34,7 @@ detail on the reasoning and thinking behind this. WARNING - this went *long*.
  startups and assuming exponential growth. And then concludes that delivering less is in the interest of our
  users somehow.
 
-* Proposal B - Action: allow AI-assisted contributions, with conditions of: legality, accountability, disclosure,
+* Proposal B(2) - Action: allow AI-assisted contributions, with conditions of: legality, accountability, disclosure,
   no uncoordinated bulk actions, privacy. Concerns on quality and legal status as well as environmental impact
   and scraper load are noted, but not really addressed beyond labelling them as concerns. - IMHO it is an ok starting
   position as it establishes that each contributing *person* must still be fully responsible for *their*
@@ -47,7 +47,7 @@ detail on the reasoning and thinking behind this. WARNING - this went *long*.
   and local AI tools. Possibly a preference for open-weight models with a clear path forward to preferring truly
   free AI models, when such a category of products could be clearly delineated and established.
 
-* Proposal C - Action: reject AI-assisted contributions at Code of Conduct level. Claims all the world's evils come
+* Proposal C(3) - Action: reject AI-assisted contributions at Code of Conduct level. Claims all the world's evils come
   from LLMs and that "Ethical and safe use of this technology is almost impossible". Goes as far as banning any
   use of LLMs even in Debian mailing list emails and Debian Planet blog posts - if you do, it's a CoC violation
   and may result in exclusion from the project. Additionally *mandates* the disclosure of the usage ... presumably
@@ -60,7 +60,7 @@ detail on the reasoning and thinking behind this. WARNING - this went *long*.
   there are plenty of LLMs owned by all kinds of companies all over the world and there are plenty of open-weight
   LLMs that are not really owned by anyone. Most invasive and dishonest option on the ballot.
 
-* Proposal D - Action: allow AI-assisted contributions, with conditions of: legality, accountability,
+* Proposal D(4) - Action: allow AI-assisted contributions, with conditions of: legality, accountability,
   disclosure, privacy. IMHO same as B, just shorter. Adds a "we don't recommend" towards others developing software
   with AI assistance. Seems pretty weird to add that and then immediately accept Debian contributors doing so.
   Assumes that the bulk change bit of B is implied as AI is just tooling, so bulk changes should be pre-discussed
@@ -69,7 +69,7 @@ detail on the reasoning and thinking behind this. WARNING - this went *long*.
   the complete absence of resource usage or the environment from concerns. IMHO it would be better to have that
   and also recommendations on how to avoid causing environmental damage when using AI.
 
-* Proposal E - Action: no action as such - AI-assisted contributions must follow the same rules as all other
+* Proposal E(5) - Action: no action as such - AI-assisted contributions must follow the same rules as all other
   contributions and those rules are sufficient. IMHO despite its length this is a very well-worded position
   statement that describes how and why AI-assisted contributions already work perfectly fine in the Debian context
   when *all* the same rules that apply to all contributions are also consistently applied to AI-assisted
@@ -81,13 +81,13 @@ detail on the reasoning and thinking behind this. WARNING - this went *long*.
   So why should AI be special one way or another? IMHO Debian *should* have a datacenter sustainability policy,
   regardless of the AI discussion.
 
-* Proposal F - Action: discourage AI, but allow it based on existing processes (similar idea to E). Dances a bit
+* Proposal F(6) - Action: discourage AI, but allow it based on existing processes (similar idea to E). Dances a bit
   around the question of disclosure of AI use (as a courtesy) and accepting that some people may still ban
   all contributions where any AI was involved in any way. Which in turn discourages disclosure to avoid pointless
   rejection of valuable contributions (like security patches). IMHO this option is ok, but so watered down that
   it is bound to bring up further discussions and conflicts on details.
 
-* Proposal G - Action: ban non-humans from *directly* contributing to Debian. IMHO - another bizarre and
+* Proposal G(7) - Action: ban non-humans from *directly* contributing to Debian. IMHO - another bizarre and
   self-contradictory option. It bans *all* Debian interactions with AI assistance, including email messages to
   Debian mailing lists and (supposedly) blog posts on Planet Debian. It "reminds" people who "use such tools
   assistively" of the DFSG and Social Contract - isn't that a threat of a ban and expulsion similar to C? The
@@ -103,7 +103,7 @@ detail on the reasoning and thinking behind this. WARNING - this went *long*.
   for this is some unnamed "concerns" of "extra work" being borne by "other people"? Kind of does not feel
   right to bear such draconian restrictions for some unspecified concerns.
 
-* Proposal H - Action: *condemn* usage, but not *actually* ban anything. And then it goes on to claim
+* Proposal H(8) - Action: *condemn* usage, but not *actually* ban anything. And then it goes on to claim
   (without any evidence or elaboration) that LLM usage accelerates the destruction of "planet earth" (sic).
   IMHO this proposal is at the same time the loudest ("The planet is burning") and also the one that demands the
   *least* action. It dances a really twisty line between raising "significant" concerns in all areas and even
@@ -116,15 +116,15 @@ detail on the reasoning and thinking behind this. WARNING - this went *long*.
 
 With all the above considered I will vote like this (earlier options are preferred over later options):
 
-* Proposal E - solid *hack* of integrating AI into already existing Debian rules and conventions
-* Proposal B - explicit and detailed
-* Proposal D - lower because of discouragement to others on what we agreed to do ourselves
-* Proposal F - I am not a fan of dancing around with disclosures
-* Further discussion - I do not want any option below this to succeed as they would do more harm than good
-* Proposal H - loud, but not doing anything actually
-* Proposal A - at least this one does not set rules for emails
-* Proposal G - at least this one allows an AI overseer to tell you what to write with your own fingers
-* Proposal C - the most draconic and invasive one that explicitly wants to kick people out of the project
+* Proposal E(5) - solid *hack* of integrating AI into already existing Debian rules and conventions
+* Proposal B(2) - explicit and detailed
+* Proposal D(4) - lower because of discouragement to others on what we agreed to do ourselves
+* Proposal F(6) - I am not a fan of dancing around with disclosures
+* Further discussion(9) - I do not want any option below this to succeed as they would do more harm than good
+* Proposal H(8) - loud, but not doing anything actually
+* Proposal A(1) - at least this one does not set rules for emails
+* Proposal G(7) - at least this one allows an AI overseer to tell you what to write with your own fingers
+* Proposal C(3) - the most draconic and invasive one that explicitly wants to kick people out of the project
 
 Details on rationale
 
