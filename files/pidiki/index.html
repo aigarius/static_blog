@@ -94,20 +94,29 @@
       <!-- Historical Data Explorer Section: Clear, thick lines, large controls -->
       <section class="section-container" aria-labelledby="historySectionTitle">
         <div class="section-header history-header-row">
-          <div>
+          <div class="history-title-row">
             <h2 id="historySectionTitle" class="section-title">Temperatūras un mitruma vēsture</h2>
           </div>
 
           <!-- Large easy-to-click controls -->
           <div class="explorer-controls">
-            <!-- Range Selector -->
-            <div class="control-group range-picker" role="radiogroup" aria-label="Vēstures periods">
-              <button class="range-btn active" data-range="24h" id="range24h">24 stundas</button>
-              <button class="range-btn" data-range="3d" id="range3d">3 dienas</button>
-              <button class="range-btn" data-range="7d" id="range7d">7 dienas</button>
+            <!-- Time Controls: Historical data to the left, recent periods to the right -->
+            <div class="time-controls-group">
+              <!-- Historical Month Dropdown: allows selecting any month in history (Left) -->
+              <div class="month-select-wrapper" id="monthSelectWrapper">
+                <select id="monthSelect" class="month-select" aria-label="Izvēlēties mēnesi no vēstures">
+                  <option value="">Visi mēneši...</option>
+                </select>
+              </div>
+
+              <!-- Range Selector & Dynamic Recent Months (Populated chronologically: Older -> Recent) -->
+              <div class="control-group range-picker" role="radiogroup" aria-label="Vēstures periods" id="rangePicker">
+                <button class="range-btn" data-range="7d" id="range7d">7 dienas</button>
+                <button class="range-btn active" data-range="24h" id="range24h">24 stundas</button>
+              </div>
             </div>
 
-            <!-- Metric Filter -->
+            <!-- Metric Filter (Aligned to the right) -->
             <div class="control-group metric-picker">
               <button class="metric-filter-btn active" data-metric="all" id="filterAll">Abi</button>
               <button class="metric-filter-btn" data-metric="temp" id="filterTemp">Tikai temp.</button>
@@ -173,7 +182,7 @@
     <!-- Footer -->
     <footer class="app-footer">
       <div class="footer-content">
-        <p>Pidiki klimata panelis &bull; Vietne: <a href="https://aigarius.com" target="_blank" rel="noopener">aigarius.com</a></p>
+        <p>Pidiki klimata panelis &bull; Vietne: <a href="http://pidiki.aigarius.com" target="_blank" rel="noopener">pidiki.aigarius.com</a> (arī <a href="http://pidiki.klavina.com" target="_blank" rel="noopener">pidiki.klavina.com</a>)</p>
       </div>
     </footer>
   </div>

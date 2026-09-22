@@ -462,37 +462,63 @@ body {
 /* History Explorer Controls: Big & Accessible */
 .history-header-row {
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.history-title-row {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
 }
 
 .explorer-controls {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
   gap: 14px;
+}
+
+.time-controls-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.metric-picker {
+  margin-left: auto;
 }
 
 .control-group {
   display: inline-flex;
+  align-items: stretch;
   background: var(--bg-surface);
   border: 2px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 4px;
+  height: 56px;
+  box-sizing: border-box;
 }
 
 .range-btn, .metric-filter-btn {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   color: var(--text-secondary);
   font-size: 1.05rem; /* Large button text */
   font-weight: 700;
-  padding: 10px 18px;
-  min-height: 46px;
+  padding: 0 18px;
   border-radius: var(--radius-sm);
   cursor: pointer;
+  white-space: nowrap;
+  box-sizing: border-box;
   transition: all var(--transition-fast);
 }
 
@@ -506,6 +532,67 @@ body {
   color: #0a0e17;
   font-weight: 800;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Historical Month Dropdown: Senior-Friendly & High Contrast */
+.month-select-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 56px;
+  box-sizing: border-box;
+}
+
+.month-select {
+  height: 56px;
+  box-sizing: border-box;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0 42px 0 18px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a0aec0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  transition: all var(--transition-fast);
+}
+
+.month-select:hover {
+  border-color: var(--border-color-glow);
+  color: #ffffff;
+  background-color: var(--bg-surface-hover);
+}
+
+.month-select:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.month-select.active {
+  background-color: #ffffff;
+  color: #0a0e17;
+  font-weight: 800;
+  border-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230a0e17' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+.month-select option {
+  background: #141c2b;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 10px;
 }
 
 /* Location Filter Chips */
@@ -757,15 +844,41 @@ body {
     height: 340px;
   }
 
-  .control-group {
+  .time-controls-group {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .month-select-wrapper {
+    width: 100%;
+    height: 52px;
+  }
+
+  .month-select {
+    width: 100%;
+    height: 52px;
+  }
+
+  .control-group {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .metric-picker {
+    margin-left: 0;
+    width: 100%;
   }
 
   .range-btn, .metric-filter-btn {
     flex: 1;
     text-align: center;
-    padding: 10px 8px;
+    padding: 0 10px;
     font-size: 0.95rem;
+    white-space: nowrap;
   }
 }

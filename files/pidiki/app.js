@@ -5,6 +5,7 @@
  * - Clean layout without statistical clutter
  * - Thick, high-contrast chart lines
  * - Full accessibility on 1080p laptop and iPhone
+ * - Fully dynamic monthly archives (recent buttons + historical dropdown)
  */
 
 // Application State
@@ -12,7 +13,9 @@ const state = {
   latest: null,
   manifest: null,
   recentHistory: null,
-  activeRange: '24h',        // '24h' | '3d' | '7d'
+  monthCache: {},             // '2026-09': payload, '2026-08': payload, ...
+  activeRange: '24h',        // '24h' | '7d' | 'month'
+  activeMonthId: null,       // e.g. '2026-09'
   activeMetric: 'all',       // 'all' | 'temp' | 'hum'
   activeLocations: new Set(['maja', 'pirts', 'ardurvju']),
   autoRefresh: true,
@@ -68,7 +71,8 @@ const dom = {
   locationsGrid: document.getElementById('locationsGrid'),
   chartCanvas: document.getElementById('climateChart'),
   chartLoadingOverlay: document.getElementById('chartLoadingOverlay'),
-  rangeButtons: document.querySelectorAll('.range-btn'),
+  rangePicker: document.getElementById('rangePicker'),
+  monthSelect: document.getElementById('monthSelect'),
   metricButtons: document.querySelectorAll('.metric-filter-btn'),
   locationChips: document.querySelectorAll('.loc-filter-chip'),
   analyticsTableBody: document.getElementById('analyticsTableBody'),
@@ -136,6 +140,18 @@ async function loadLatestData() {
   }
 }
 
+async function loadManifest() {
+  try {
+    const manifest = await fetchJSON('./data/manifest.json');
+    state.manifest = manifest;
+    if (manifest.months && manifest.months.length > 0) {
+      renderDynamicControls(manifest.months);
+    }
+  } catch (err) {
+    console.warn('Nevarēja ielādēt manifest.json:', err);
+  }
+}
+
 async function loadRecentHistory() {
   try {
     dom.chartLoadingOverlay.classList.remove('hidden');
@@ -148,6 +164,139 @@ async function loadRecentHistory() {
   } finally {
     dom.chartLoadingOverlay.classList.add('hidden');
   }
+}
+
+// Month & Range Selection
+async function selectMonth(monthId) {
+  state.activeRange = 'month';
+  state.activeMonthId = monthId;
+
+  updateControlSelectionUI();
+
+  if (!state.monthCache[monthId]) {
+    dom.chartLoadingOverlay.classList.remove('hidden');
+    try {
+      const monthData = await fetchJSON(`./data/history/history-${monthId}.json`);
+      state.monthCache[monthId] = monthData;
+    } catch (err) {
+      console.error(`Kļūda, ielādējot history-${monthId}.json:`, err);
+      showAlert(`Neizdevās ielādēt mēneša datus (${monthId}).`);
+      return;
+    } finally {
+      dom.chartLoadingOverlay.classList.add('hidden');
+    }
+  }
+
+  updateChartAndAnalytics();
+}
+
+async function selectRecentRange(range) {
+  state.activeRange = range;
+  state.activeMonthId = null;
+
+  updateControlSelectionUI();
+
+  if (!state.recentHistory) {
+    await loadRecentHistory();
+  } else {
+    updateChartAndAnalytics();
+  }
+}
+
+// Synchronize UI active styling across quick buttons and dropdown
+function updateControlSelectionUI() {
+  if (dom.rangePicker) {
+    const btns = dom.rangePicker.querySelectorAll('.range-btn');
+    let matchedQuickBtn = false;
+
+    btns.forEach((b) => {
+      const isActive =
+        (b.dataset.range === 'month' && state.activeRange === 'month' && b.dataset.month === state.activeMonthId) ||
+        (b.dataset.range !== 'month' && state.activeRange === b.dataset.range);
+
+      if (isActive) {
+        b.classList.add('active');
+        matchedQuickBtn = true;
+      } else {
+        b.classList.remove('active');
+      }
+    });
+
+    if (dom.monthSelect) {
+      if (state.activeRange === 'month' && state.activeMonthId) {
+        if (!matchedQuickBtn) {
+          dom.monthSelect.value = state.activeMonthId;
+          dom.monthSelect.classList.add('active');
+        } else {
+          dom.monthSelect.value = '';
+          dom.monthSelect.classList.remove('active');
+        }
+      } else {
+        dom.monthSelect.value = '';
+        dom.monthSelect.classList.remove('active');
+      }
+    }
+  }
+}
+
+// Render Dynamic Controls: historical dropdown, up to 3 recent month buttons, 7d, 24h
+// Visual order: Historical data to the left, recent periods to the right
+function renderDynamicControls(months) {
+  if (!dom.rangePicker) return;
+
+  // 1. Populate Range & Recent Month Buttons
+  dom.rangePicker.innerHTML = '';
+
+  const buttonsDef = [];
+
+  // Up to 3 most recent months get dedicated quick buttons (oldest -> newest)
+  const recentMonths = (months || []).slice(0, 3).reverse();
+  recentMonths.forEach((m) => {
+    buttonsDef.push({
+      label: m.name || m.month_name || m.label,
+      title: m.label || m.name,
+      range: 'month',
+      monthId: m.id,
+    });
+  });
+
+  // Recent periods to the right
+  buttonsDef.push(
+    { label: '7 dienas', range: '7d', monthId: null },
+    { label: '24 stundas', range: '24h', monthId: null }
+  );
+
+  buttonsDef.forEach((def) => {
+    const btn = document.createElement('button');
+    btn.className = 'range-btn';
+    btn.textContent = def.label;
+    if (def.title) btn.title = def.title;
+    btn.dataset.range = def.range;
+    if (def.monthId) btn.dataset.month = def.monthId;
+
+    btn.addEventListener('click', async () => {
+      if (def.range === 'month') {
+        await selectMonth(def.monthId);
+      } else {
+        await selectRecentRange(def.range);
+      }
+    });
+
+    dom.rangePicker.appendChild(btn);
+  });
+
+  // 2. Populate Full Historical Month Dropdown
+  if (dom.monthSelect) {
+    dom.monthSelect.innerHTML = '<option value="">Visi mēneši...</option>';
+    (months || []).forEach((m) => {
+      const opt = document.createElement('option');
+      opt.value = m.id;
+      opt.textContent = m.label || `${m.year}. gada ${m.month_name}`;
+      dom.monthSelect.appendChild(opt);
+    });
+  }
+
+  updateControlSelectionUI();
 }
 
 // Render Uncluttered, Senior-Accessible Location Cards
@@ -227,6 +376,12 @@ function renderLocationsGrid(locations) {
 
 // Assemble Historical Datasets for Chart.js
 function getFilteredSeriesData() {
+  if (state.activeRange === 'month' && state.activeMonthId) {
+    const monthData = state.monthCache[state.activeMonthId];
+    if (!monthData || !monthData.series) return { rows: [], fields: [] };
+    return { rows: monthData.series, fields: monthData.fields || [] };
+  }
+
   if (!state.recentHistory || !state.recentHistory.series) return { rows: [], fields: [] };
 
   const allRows = state.recentHistory.series;
@@ -238,8 +393,7 @@ function getFilteredSeriesData() {
   const maxTs = lastRow[0];
 
   let rangeSeconds = 86400; // default 24h
-  if (state.activeRange === '3d') rangeSeconds = 3 * 86400;
-  else if (state.activeRange === '7d') rangeSeconds = 7 * 86400;
+  if (state.activeRange === '7d') rangeSeconds = 7 * 86400;
 
   const minTs = maxTs - rangeSeconds;
   const filteredRows = allRows.filter((row) => row[0] >= minTs);
@@ -282,6 +436,7 @@ function initOrUpdateChart() {
           borderWidth: 4.0, // Thick line for temperature
           borderDash: [],   // Solid line
           fill: false,
+          spanGaps: true,   // Seamless line across single missing samples
           pointStyle: locStyle.temp.pointStyle, // Circle
           pointRadius: 0,
           pointHoverRadius: 9,
@@ -314,6 +469,7 @@ function initOrUpdateChart() {
           borderWidth: 2.0, // Thinner line for humidity as requested
           borderDash: [],   // Solid line (NOT dashed as requested)
           fill: false,
+          spanGaps: true,   // Seamless line across single missing samples
           pointStyle: locStyle.hum.pointStyle, // Rounded rectangle
           pointRadius: 0,
           pointHoverRadius: 8,
@@ -461,6 +617,8 @@ function initOrUpdateChart() {
             color: '#d0d8e2',
             font: { family: "'Inter', sans-serif", size: 13, weight: '600' },
             maxRotation: 0,
+            autoSkip: true,
+            maxTicksLimit: 12,
           },
         },
         yTemp: {
@@ -481,6 +639,7 @@ function initOrUpdateChart() {
           ticks: {
             color: '#d0d8e2',
             font: { family: "'Inter', sans-serif", size: 14, weight: '700' },
+            callback: (val) => `${val} °C`,
           },
         },
         yHum: {
@@ -491,17 +650,17 @@ function initOrUpdateChart() {
           max: humMax,
           title: {
             display: true,
-            text: 'Mitrums (%)',
+            text: 'Relatīvais mitrums (%)',
             color: '#ffffff',
             font: { family: "'Inter', sans-serif", weight: '800', size: 15 },
           },
           grid: {
-            drawOnChartArea: !showTempAxis,
-            color: 'rgba(255, 255, 255, 0.08)',
+            drawOnChartArea: false,
           },
           ticks: {
             color: '#d0d8e2',
             font: { family: "'Inter', sans-serif", size: 14, weight: '700' },
+            callback: (val) => `${val} %`,
           },
         },
       },
@@ -516,12 +675,9 @@ function initOrUpdateChart() {
   state.chartInstance = new Chart(ctx, chartConfig);
 }
 
-// Calculate Summary Statistics Table
+// Collapsible Statistical Summary Table
 function updateAnalyticsTable(rows, fields) {
-  if (!rows || rows.length === 0 || !fields) {
-    dom.analyticsTableBody.innerHTML = '<tr><td colspan="6" class="table-placeholder">Šim periodam nav pieejami dati.</td></tr>';
-    return;
-  }
+  if (!dom.analyticsTableBody || rows.length === 0 || fields.length === 0) return;
 
   const fieldIndexMap = {};
   fields.forEach((f, idx) => {
@@ -610,20 +766,25 @@ function setupEventListeners() {
     dom.refreshIcon.classList.add('spinning');
     try {
       await loadLatestData();
-      await loadRecentHistory();
+      if (state.activeRange === 'month' && state.activeMonthId) {
+        delete state.monthCache[state.activeMonthId];
+        await selectMonth(state.activeMonthId);
+      } else {
+        await loadRecentHistory();
+      }
     } finally {
       setTimeout(() => dom.refreshIcon.classList.remove('spinning'), 500);
     }
   });
 
-  dom.rangeButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      dom.rangeButtons.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      state.activeRange = btn.dataset.range;
-      updateChartAndAnalytics();
+  if (dom.monthSelect) {
+    dom.monthSelect.addEventListener('change', async (e) => {
+      const monthId = e.target.value;
+      if (monthId) {
+        await selectMonth(monthId);
+      }
     });
-  });
+  }
 
   dom.metricButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -680,6 +841,7 @@ async function init() {
   }, 10000);
 
   await loadLatestData();
+  await loadManifest();
   await loadRecentHistory();
 
   startAutoRefresh();
