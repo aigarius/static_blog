@@ -131,6 +131,6 @@ dmypy.json
 # Nikola caches and output
 cache/
 output/
-.doit.db.db
+.doit.db*
 
 tags

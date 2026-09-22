@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pidiki klimata panelis</title>
+  
+  <!-- Privacy Level 1: Prevent search engines from indexing or caching this private subpage -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <!-- Typography: Inter with high legibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Chart.js and Date Adapter -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-mesh"></div>
+
+  <div class="app-container">
+    <!-- Header: High contrast, large text -->
+    <header class="app-header">
+      <div class="header-brand">
+        <h1 class="brand-title">Pidiki klimats</h1>
+        <p class="brand-subtitle">Māja &bull; Pirts &bull; Ārdurvis</p>
+      </div>
+
+      <div class="header-status-panel">
+        <div class="status-indicator-badge" id="statusBadge">
+          <span class="status-pulse-dot" id="pulseDot"></span>
+          <span class="status-label" id="statusLabel">Pieslēdzas...</span>
+        </div>
+        
+        <div class="sync-time-wrapper">
+          <span class="sync-timestamp" id="lastUpdatedTime">--</span>
+        </div>
+
+        <div class="header-actions">
+          <button id="refreshBtn" class="btn-refresh" aria-label="Atjaunināt rādījumus">
+            <svg id="refreshIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg>
+            <span>Atjaunot</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Notification / Error Banner (Hidden by default) -->
+    <div id="alertBanner" class="alert-banner hidden">
+      <span id="alertMessage" class="alert-message"></span>
+      <button id="dismissAlertBtn" class="alert-dismiss" aria-label="Aizvērt paziņojumu">&times;</button>
+    </div>
+
+    <!-- Main Live Climate Overview: Huge clear numbers, no clutter -->
+    <main class="dashboard-main">
+      <section class="section-container" aria-labelledby="liveSectionTitle">
+        <div class="section-header">
+          <h2 id="liveSectionTitle" class="section-title">Pašreizējie rādījumi</h2>
+        </div>
+
+        <!-- 3 Location Cards Grid -->
+        <div class="locations-grid" id="locationsGrid">
+          <div class="location-card skeleton-card">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton-metrics">
+              <div class="skeleton skeleton-box"></div>
+              <div class="skeleton skeleton-box"></div>
+            </div>
+          </div>
+          <div class="location-card skeleton-card">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton-metrics">
+              <div class="skeleton skeleton-box"></div>
+              <div class="skeleton skeleton-box"></div>
+            </div>
+          </div>
+          <div class="location-card skeleton-card">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton-metrics">
+              <div class="skeleton skeleton-box"></div>
+              <div class="skeleton skeleton-box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historical Data Explorer Section: Clear, thick lines, large controls -->
+      <section class="section-container" aria-labelledby="historySectionTitle">
+        <div class="section-header history-header-row">
+          <div>
+            <h2 id="historySectionTitle" class="section-title">Temperatūras un mitruma vēsture</h2>
+          </div>
+
+          <!-- Large easy-to-click controls -->
+          <div class="explorer-controls">
+            <!-- Range Selector -->
+            <div class="control-group range-picker" role="radiogroup" aria-label="Vēstures periods">
+              <button class="range-btn active" data-range="24h" id="range24h">24 stundas</button>
+              <button class="range-btn" data-range="3d" id="range3d">3 dienas</button>
+              <button class="range-btn" data-range="7d" id="range7d">7 dienas</button>
+            </div>
+
+            <!-- Metric Filter -->
+            <div class="control-group metric-picker">
+              <button class="metric-filter-btn active" data-metric="all" id="filterAll">Abi</button>
+              <button class="metric-filter-btn" data-metric="temp" id="filterTemp">Tikai temp.</button>
+              <button class="metric-filter-btn" data-metric="hum" id="filterHum">Tikai mitr.</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location Filter Chips -->
+        <div class="location-filters" id="locationFilters">
+          <span class="filter-label">Rādīt vietas:</span>
+          <button class="loc-filter-chip active" data-loc="maja" id="filterLocMaja">
+            <span class="filter-check">✓</span> Māja
+          </button>
+          <button class="loc-filter-chip active" data-loc="pirts" id="filterLocPirts">
+            <span class="filter-check">✓</span> Pirts
+          </button>
+          <button class="loc-filter-chip active" data-loc="ardurvju" id="filterLocArdurvju">
+            <span class="filter-check">✓</span> Ārdurvis
+          </button>
+        </div>
+
+        <!-- Chart Container with Large High-Contrast View -->
+        <div class="chart-wrapper">
+          <div id="chartLoadingOverlay" class="chart-loading-overlay hidden">
+            <div class="spinner"></div>
+            <span>Ielādē datus...</span>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="climateChart" aria-label="Klimata datu grafiks" role="img"></canvas>
+          </div>
+        </div>
+
+        <!-- Optional Collapsible Statistics: hidden by default so 70-year-olds aren't overwhelmed -->
+        <details class="stats-collapsible">
+          <summary class="stats-summary-btn">
+            <span>Rādīt papildu skaitļus (minimums, maksimums, vidējais)</span>
+            <span class="stats-summary-icon">▾</span>
+          </summary>
+          <div class="analytics-card">
+            <div class="table-responsive">
+              <table class="analytics-table" id="analyticsTable">
+                <thead>
+                  <tr>
+                    <th>Vieta</th>
+                    <th>Rādītājs</th>
+                    <th>Pašreiz</th>
+                    <th>Zemākais</th>
+                    <th>Augstākais</th>
+                    <th>Vidējais</th>
+                  </tr>
+                </thead>
+                <tbody id="analyticsTableBody">
+                  <tr><td colspan="6" class="table-placeholder">Ielādē...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <p>Pidiki klimata panelis &bull; Vietne: <a href="https://aigarius.com" target="_blank" rel="noopener">aigarius.com</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

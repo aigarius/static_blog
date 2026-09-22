@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-22T19:02:02.294350+00:00",
+  "sensors": [
+    {
+      "location_id": "maja",
+      "location_name": "Māja",
+      "icon": "home",
+      "temp_entity": "sensor.maja_80b54e34f9c0_temperature",
+      "hum_entity": "sensor.maja_80b54e34f9c0_humidity"
+    },
+    {
+      "location_id": "pirts",
+      "location_name": "Pirts",
+      "icon": "hot_tub",
+      "temp_entity": "sensor.pirts_d885ac1450ac_temperature",
+      "hum_entity": "sensor.pirts_d885ac1450ac_humidity"
+    },
+    {
+      "location_id": "ardurvju",
+      "location_name": "Ārdurvis",
+      "icon": "door_front",
+      "temp_entity": "sensor.ardurvju_temperatura",
+      "hum_entity": "sensor.ardurvju_mitrums"
+    }
+  ],
+  "recent_file": "history-recent.json",
+  "archives": [
+    {
+      "period": "2026-09",
+      "file": "history/history-2026-09.json",
+      "points": 673
+    }
+  ]
+}

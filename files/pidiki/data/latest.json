@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-09-22T19:02:02.294350+00:00",
+  "total_sensors": 6,
+  "locations": [
+    {
+      "id": "maja",
+      "name": "Māja",
+      "description": "Dzīvojamā māja",
+      "icon": "home",
+      "temperature": {
+        "entity_id": "sensor.maja_80b54e34f9c0_temperature",
+        "value": 14.4,
+        "unit": "°C",
+        "min_24h": 14.0,
+        "max_24h": 16.0,
+        "avg_24h": 14.65,
+        "trend": "stable",
+        "comfort_min": 19.0,
+        "comfort_max": 23.0,
+        "last_changed": "2026-09-22T17:41:06.585599+00:00"
+      },
+      "humidity": {
+        "entity_id": "sensor.maja_80b54e34f9c0_humidity",
+        "value": 71.2,
+        "unit": "%",
+        "min_24h": 71.1,
+        "max_24h": 72.0,
+        "avg_24h": 71.3,
+        "trend": "stable",
+        "comfort": "humid",
+        "comfort_min": 40.0,
+        "comfort_max": 60.0,
+        "last_changed": "2026-09-22T17:41:06.586774+00:00"
+      }
+    },
+    {
+      "id": "pirts",
+      "name": "Pirts",
+      "description": "Pirts ēka",
+      "icon": "hot_tub",
+      "temperature": {
+        "entity_id": "sensor.pirts_d885ac1450ac_temperature",
+        "value": 16.3,
+        "unit": "°C",
+        "min_24h": 16.3,
+        "max_24h": 18.9,
+        "avg_24h": 17.22,
+        "trend": "falling",
+        "comfort_min": 18.0,
+        "comfort_max": 24.0,
+        "last_changed": "2026-09-22T18:27:06.586766+00:00"
+      },
+      "humidity": {
+        "entity_id": "sensor.pirts_d885ac1450ac_humidity",
+        "value": 59.6,
+        "unit": "%",
+        "min_24h": 58.2,
+        "max_24h": 60.2,
+        "avg_24h": 59.3,
+        "trend": "stable",
+        "comfort": "ideal",
+        "comfort_min": 40.0,
+        "comfort_max": 70.0,
+        "last_changed": "2026-09-22T18:27:06.590563+00:00"
+      }
+    },
+    {
+      "id": "ardurvju",
+      "name": "Ārdurvis",
+      "description": "Ieeja / āra gaiss",
+      "icon": "door_front",
+      "temperature": {
+        "entity_id": "sensor.ardurvju_temperatura",
+        "value": 12.1,
+        "unit": "°C",
+        "min_24h": 7.9,
+        "max_24h": 17.3,
+        "avg_24h": 11.89,
+        "trend": "stable",
+        "comfort_min": null,
+        "comfort_max": null,
+        "last_changed": "2026-09-22T19:00:43.577262+00:00"
+      },
+      "humidity": {
+        "entity_id": "sensor.ardurvju_mitrums",
+        "value": 79.0,
+        "unit": "%",
+        "min_24h": 70.0,
+        "max_24h": 89.0,
+        "avg_24h": 80.1,
+        "trend": "rising",
+        "comfort": "humid",
+        "comfort_min": null,
+        "comfort_max": null,
+        "last_changed": "2026-09-22T18:29:39.363966+00:00"
+      }
+    }
+  ]
+}
